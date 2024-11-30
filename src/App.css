@@ -1,0 +1,159 @@
+*{
+ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  /* background-color: black; */
+
+  }
+
+  .firstimg {
+    animation: bounce 1s infinite; 
+    animation-delay: 3s;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0); 
+    }
+    40% {
+      transform: translateY(-10px); 
+    }
+    60% {
+      transform: translateY(-15px); 
+    }
+  }
+
+  .secondimg {
+    animation: bounce 2s infinite; 
+    /* animation-delay: 1s; */
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    30% {
+      transform: translateY(-20px); 
+    }
+    60% {
+      transform: translateY(-15px); 
+    }
+  }
+
+  .thirdimg {
+    animation: bounce 3s infinite; 
+    /* animation-delay: 3s; */
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    60% {
+      transform: translateY(-20px); 
+    }
+    80% {
+      transform: translateY(-15px); 
+    }
+  } 
+
+
+  
+ 
+   .fireImg {
+    animation: fire 3s infinite; /* Adjust duration as needed */
+  }
+  
+  @keyframes fire {
+    0% {
+      transform: translateX(0px) }
+    25% {
+      transform: translateX(-80px) 
+    }
+   
+  }
+   
+  .scooterImg{
+    animation: scooter 4s infinite; 
+  }
+  @keyframes scooter {
+    0%{
+      transform: translateX(0px);
+    }
+    50%{
+      transform: translateX(40px);
+    }
+  }
+
+  .mobileImg{
+    animation: mobile 4s infinite; 
+  }
+  @keyframes mobile {
+    0%{
+      transform: translateY(0px);
+    }
+    50%{
+      transform: translateY(-20px);
+    }
+  }
+
+  .girlBoy{
+    animation: girls 3s infinite; 
+  }
+  @keyframes girls {
+    0%{
+      transform: translateY(0px);
+    }
+    50%{
+      transform: translateY(-10px);
+    }
+  }
+  
+  .circle{
+    animation: rotate 3s ;
+  }
+  @keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(30px); /* Move to the right edge */
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(30px); /* Complete rotation */
+    }
+}
+
+
+/* For WebKit browsers (Chrome, Safari) */
+.scrollable {
+  /* overflow-y: scroll; */
+    overflow-y: scroll; /* Enable vertical scrolling when content overflows */
+    border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+    padding: 10px;
+}
+
+.scrollable::-webkit-scrollbar {
+  width: 14px;
+  height: 50px; /* Width of the scrollbar */
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  background-color: red; /* Color of the scrollbar thumb */
+  border-radius: 5px; /* Rounded corners for the scrollbar thumb */
+  min-height: 20px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+ 
+}
+.scrollable::-webkit-scrollbar-button {
+  display: none; /* Hides the scrollbar buttons (arrows) */
+}
+/* For Firefox */
+.scrollable {
+  scrollbar-color: red #f1f1f1; /* thumb color and track color */
+  /* scrollbar-width:thin;  */
+  scrollbar-width: thin;
+}
