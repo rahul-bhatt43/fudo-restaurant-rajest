@@ -100,22 +100,22 @@ function CustomerReviews() {
                     src={firstGirlImg}
                     alt=""
                     onMouseEnter={() => firstData()}
-                    className="cursor-pointer w-[40px] h-[40px] lg:w-fit lg:h-fit"
+                    className="firstimg cursor-pointer w-[40px] h-[40px] lg:w-fit lg:h-fit"
                   />
                   <img
                     src={secondGirlImg}
                     alt=""
                     onMouseEnter={() => secondData()}
-                    className="ml-[-10px] lg:ml-[-20px] cursor-pointer w-[40px] h-[40px] lg:w-fit lg:h-fit"
+                    className="secondimg ml-[-10px] lg:ml-[-20px] cursor-pointer w-[40px] h-[40px] lg:w-fit lg:h-fit"
                   />
                   <img
                     src={thirdGirlImg}
                     alt=""
                     onMouseEnter={() => thirdData()}
-                    className="ml-[-10px] lg:ml-[-20px] cursor-pointer w-[40px] h-[40px] lg:w-fit lg:h-fit"
+                    className="thirdimg ml-[-10px] lg:ml-[-20px] cursor-pointer w-[40px] h-[40px] lg:w-fit lg:h-fit"
                   />
                   <div
-                    className="ml-[-10px] lg:ml-[-20px] bg-[#EB5757] w-[40px] h-[40px] lg:w-[64px] lg:h-[64px] rounded-full flex justify-center
+                    className="firstimg ml-[-10px] lg:ml-[-20px] bg-[#EB5757] w-[40px] h-[40px] lg:w-[64px] lg:h-[64px] rounded-full flex justify-center
                         items-center "
                   >
                     <p className="text-white">12k +</p>
@@ -176,13 +176,13 @@ function CustomerReviews() {
                   </div>
                 </div>
                 <div className="flex  items-center gap-x-4">
-                  {/* <ReactStars
+                  <ReactStars
                     count={5}
                     onChange={2}
                     value={item.starRating}
                     size={30}
                     activeColor="#ffd700"
-                  /> */}
+                  />
                   <p
                     className="font-semibold text-[1rem] text-[#000000]
                             "

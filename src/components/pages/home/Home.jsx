@@ -9,7 +9,8 @@ import Signup from '../signup/Signup'
 import Login from '../login/Login'
 import TopSelling from '../../topSelling/TopSelling'
 import Footer from '../../footer/Footer'
-import Scroll from '../../../scroll'
+import NavSearch from '../../navSearch/NavSearch'
+
 
 
 
@@ -27,6 +28,7 @@ function Home() {
       <BestSelling ></BestSelling>
       <TopSelling></TopSelling>
       <CustomerReviews></CustomerReviews>
+      {/* <NavSearch></NavSearch> */}
       
     
 

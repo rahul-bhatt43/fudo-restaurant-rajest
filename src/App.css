@@ -8,7 +8,10 @@
   /* background-color: black; */
 
   }
+  
 
+
+  
   .firstimg {
     animation: bounce 1s infinite; 
     animation-delay: 3s;
@@ -64,8 +67,8 @@
   
  
    .fireImg {
-    animation: fire 3s infinite; /* Adjust duration as needed */
-  }
+    animation: fire 3s infinite; 
+   }
   
   @keyframes fire {
     0% {
@@ -77,38 +80,41 @@
   }
    
   .scooterImg{
-    animation: scooter 4s infinite; 
+    transform: translatey(-2%);
+    animation: scooter 3s  infinite  ; 
+    animation-delay: 2;
   }
   @keyframes scooter {
     0%{
       transform: translateX(0px);
     }
     50%{
-      transform: translateX(40px);
+      transform: translateX(60px);
     }
   }
 
   .mobileImg{
-    animation: mobile 4s infinite; 
+    animation: mobile 3s infinite; 
   }
   @keyframes mobile {
     0%{
       transform: translateY(0px);
     }
     50%{
-      transform: translateY(-20px);
+      transform: translateY(-30px);
     }
   }
 
   .girlBoy{
-    animation: girls 3s infinite; 
+    animation: girls 3s infinite;
+    animation-delay:3s; 
   }
   @keyframes girls {
     0%{
       transform: translateY(0px);
     }
     50%{
-      transform: translateY(-10px);
+      transform: translateY(-30px);
     }
   }
   
@@ -117,43 +123,42 @@
   }
   @keyframes rotate {
     0% {
-        transform: translate(-50%, -50%) rotate(0deg) translateX(30px); /* Move to the right edge */
+        transform: translate(-50%, -50%) rotate(0deg) translateX(30px); 
     }
     100% {
-        transform: translate(-50%, -50%) rotate(360deg) translateX(30px); /* Complete rotation */
+        transform: translate(-50%, -50%) rotate(360deg) translateX(30px);
     }
 }
 
 
-/* For WebKit browsers (Chrome, Safari) */
 .scrollable {
-  /* overflow-y: scroll; */
-    overflow-y: scroll; /* Enable vertical scrolling when content overflows */
-    border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+  
+    overflow-y: scroll; 
+    border: 1px solid #ccc; 
     padding: 10px;
 }
 
 .scrollable::-webkit-scrollbar {
   width: 14px;
-  height: 50px; /* Width of the scrollbar */
+  height: 50px; 
 }
 
 .scrollable::-webkit-scrollbar-thumb {
-  background-color: red; /* Color of the scrollbar thumb */
-  border-radius: 5px; /* Rounded corners for the scrollbar thumb */
+  background-color: red; 
+  border-radius: 5px; 
   min-height: 20px;
 }
 
 .scrollable::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Background of the scrollbar track */
+  background: #f1f1f1; 
  
 }
 .scrollable::-webkit-scrollbar-button {
-  display: none; /* Hides the scrollbar buttons (arrows) */
+  display: none; 
 }
-/* For Firefox */
+
 .scrollable {
-  scrollbar-color: red #f1f1f1; /* thumb color and track color */
-  /* scrollbar-width:thin;  */
+  scrollbar-color: red #f1f1f1; 
+  
   scrollbar-width: thin;
 }

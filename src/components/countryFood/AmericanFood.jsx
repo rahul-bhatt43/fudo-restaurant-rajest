@@ -8,7 +8,7 @@ function AmericanFood() {
     const {addToCart} = useContext(CartContext)
     const {cart} = useContext(CartContext)
     const {setCart}= useContext(CartContext)
-    // console.log('indian remove btn',cart)
+    console.log('indian remove btn',cart)
     const cartRef = useRef(null);
     const modelHandler=(id)=>{
         setShowModel(id)
@@ -92,31 +92,33 @@ function AmericanFood() {
                                  '> +
                                 </button>
                                 {showModel===item.id &&
-                                <div  className='w-[250px] h-[80px]
-                                absolute top-[-50px] left-[-100px] inset-0
+                                <div  className='w-[170px] h-[80px]
+                             md:w-[250px] md:h-[80px]
+                                absolute top-[-70px] left-[-60px] md:top-[-50px] md:left-[-100px] inset-0
                                  shadow-[0_2px_5px_rgba(00,00,00,0.5)] bg-slate-50
                                 bg-opacity-45
                                 backdrop-blur-sm  rounded-lg
                                 '>
-                                    <div className=' h-[75px] flex flex-col
+                                    <div className='  h-[75px] flex flex-col
                                     justify-between ' >
                                     <button onClick={closeModal} className='text-black text-[1.9rem]
                                     self-top font-bold self-end'>
                                        <RxCross2></RxCross2>
                                     </button>
-                                    <div className='space-x-3 self-center '>
+                                    <div className='space-x-3 self-center flex  '>
                                     <button onClick={()=>addToCart(item)} className=' 
-                                      bg-[#FF3E3E] px-3 py-2 
-                                      text-[1rem] text-white rounded-xl font-semibold
-                                      hover:bg-gradient-to-r hover:from-red-500 hover:to-red-700
+                                      bg-[#FF3E3E] p-2 md:px-3 md:py-2 outline-none
+                                      text-[0.9rem] md:text-[1rem] text-white rounded-xl md:font-semibold
+                                      hover:bg-gradient-to-r hover:from-red-500
+                                       hover:to-red-700
                                       transition-all duration-300 ease-in'>
                                         AddToCart
                                     </button>
                                     <button
                                     onClick={()=>removeHandler(item)}
                                      className=' 
-                                         bg-[#FF3E3E] px-6 py-2
-                                      text-[1rem] text-white rounded-xl font-semibold
+                                         bg-[#FF3E3E] p-2 md:px-6 md:py-2 outline-none
+                                     text-[0.9rem]  md:text-[1rem] text-white rounded-xl md:font-semibold
                                       hover:bg-gradient-to-r hover:from-red-500 hover:to-red-700
                                        transition-all duration-300 ease-in'>
                                         Remove
